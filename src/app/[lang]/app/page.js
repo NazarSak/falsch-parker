@@ -1,7 +1,7 @@
 import React from 'react';
 
-const AppPage = () => {
+const Page = async () => {
   return <div>App - Page</div>;
 };
 
-export default AppPage;
+export default Page;

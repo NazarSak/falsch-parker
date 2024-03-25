@@ -1,6 +1,6 @@
 'use client';
 
-import { HomePage } from '@/app/home/page';
+import HomePage from '@/app/[lang]/home/page';
 
 const App = () => {
   return <HomePage />;

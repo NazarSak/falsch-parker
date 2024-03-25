@@ -1,10 +1,10 @@
 export const headerNavigation = [
-  { name: 'Home', href: '/' },
-  { name: 'App', href: '/app' },
-  { name: 'Parking ticket', href: '/parking-ticket' },
-  { name: 'Towing', href: '/towing' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'home', href: '/' },
+  { name: 'app', href: '/app' },
+  { name: 'parkingTicket', href: '/parking-ticket' },
+  { name: 'towing', href: '/towing' },
+  { name: 'blog', href: '/blog' },
+  { name: 'contact', href: '/contact' },
 ];
 
 export const footerNavigation = [];
