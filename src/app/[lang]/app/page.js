@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Page = async () => {
+const Page = () => {
   return <div>App - Page</div>;
 };
 

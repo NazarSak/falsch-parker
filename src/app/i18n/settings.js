@@ -1,6 +1,7 @@
 const defaultLocale = 'en';
 const locales = [defaultLocale, 'de'];
 const defaultNamespace = 'common';
+const localeCookie = 'i18next';
 
 const getOptions = (lang = defaultLocale, namespace = defaultNamespace) => {
   return {
@@ -13,4 +14,4 @@ const getOptions = (lang = defaultLocale, namespace = defaultNamespace) => {
   };
 };
 
-export { defaultLocale, locales, getOptions };
+export { defaultLocale, locales, localeCookie, getOptions };

@@ -1,5 +1,3 @@
-'use client';
-
 import HomePage from '@/app/[lang]/home/page';
 
 const App = () => {

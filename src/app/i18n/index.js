@@ -17,7 +17,7 @@ const initI18next = async (lang, namespace) => {
   return i18nInstance;
 };
 
-const useTranslation = async (lang, namespace) => {
+const useServerTranslation = async (lang, namespace) => {
   const i18nextInstance = await initI18next(lang, namespace);
   return {
     t: i18nextInstance.getFixedT(lang, namespace),
@@ -25,4 +25,4 @@ const useTranslation = async (lang, namespace) => {
   };
 };
 
-export { useTranslation };
+export { useServerTranslation };

@@ -3,10 +3,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { headerNavigation } from '@/utils/navigations';
 import logo from '@/images/logo.png';
-import { useTranslation } from '@/app/i18n';
+import { useServerTranslation } from '@/app/i18n';
 
 const Header = async ({ lang }) => {
-  const { t } = await useTranslation(lang, 'routes');
+  const { t } = await useServerTranslation(lang, 'routes');
   return (
     <div className='flex h-[75px] border border-gray-800'>
       <Image src={logo} width={100} height={40} alt='Falsch-parker logo' />
