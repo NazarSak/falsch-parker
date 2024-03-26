@@ -1,5 +1,5 @@
 export const headerNavigation = [
-  { name: 'home', href: '/' },
+  { name: 'home', href: '' },
   { name: 'app', href: '/app' },
   { name: 'parkingTicket', href: '/parking-ticket' },
   { name: 'towing', href: '/towing' },

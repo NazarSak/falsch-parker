@@ -2,12 +2,18 @@ import local from 'next/font/local';
 import Header from '@/components/header/header';
 import { locales } from '@/app/i18n/settings';
 import '../globals.scss';
+import { Footer } from '@/components/footer/footer';
 
 const cygre = local({
   src: [
     {
-      path: '../../../public/fonts2/Cygre-Medium.woff2',
-      weight: '400',
+      path: '../../../public/fonts/Cygre-Medium.ttf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../../../public/fonts/Cygre-Book.ttf',
+      weight: '300',
       style: 'normal',
     },
   ],
@@ -28,6 +34,7 @@ const RootLayout = ({ children, params: { lang } }) => {
       <body className={cygre.className}>
         <Header lang={lang} />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

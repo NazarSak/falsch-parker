@@ -1,17 +1,22 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { headerNavigation } from '@/utils/navigations';
 import logo from '@/images/logo.png';
-import { useServerTranslation } from '@/app/i18n';
 import { Container } from '@/components/container/container';
 import PayFineButton from '@/components/buttons/payFineButton';
+import { usePathname } from 'next/navigation';
+import cl from 'classnames';
+import { useClientTranslation } from '@/app/i18n/client';
 
-const Header = async ({ lang }) => {
-  const { t } = await useServerTranslation(lang, 'routes');
+const Header = ({ lang }) => {
+  const { t } = useClientTranslation(lang, 'header');
+  const pathname = usePathname();
   return (
     <header
-      className={`flex top-0 w-full h-[75px] fixed bg-[#ffff]/80 backdrop-blur-xl  duration-300 z-[1000]`}>
+      className={`fixed top-0 z-[1000] flex h-[75px] w-full bg-[#ffff]/80  backdrop-blur-xl duration-300`}>
       <Container>
         <div className='flex'>
           <div className='flex items-center'>
@@ -22,13 +27,18 @@ const Header = async ({ lang }) => {
               alt='Falsch-parker logo'
             />
           </div>
-          <div className='w-full flex items-center justify-center'>
-            <ul className='w-full max-w-[650px] flex justify-between'>
+          <div className='flex w-full items-center justify-center'>
+            <ul className='flex w-full max-w-[650px] justify-between'>
               {headerNavigation.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={`/${lang}${item.href}`}
-                    className='hover:text-[#28282880] text-base text-[#0D0F11] p-2 duration-200'>
+                    className={cl(
+                      'p-2 text-base font-light text-[#0D0F11] duration-200 hover:text-[#28282880]',
+                      pathname === `/${lang}${item.href}`
+                        ? 'drop-shadow-[0_0.5px_0_#000]'
+                        : ''
+                    )}>
                     {t(item.name)}
                   </Link>
                 </li>
