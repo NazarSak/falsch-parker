@@ -7,8 +7,6 @@ const ParkingCard = ({ type, text }) => {
   let src = null;
   let alt = '';
 
-  console.log('test-text', text);
-
   switch (type) {
     case 'businessParking':
       src = BusinessParking;
