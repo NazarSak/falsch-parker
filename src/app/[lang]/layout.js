@@ -1,12 +1,12 @@
 import local from 'next/font/local';
-import '../globals.scss';
 import Header from '@/components/header/header';
 import { locales } from '@/app/i18n/settings';
+import '../globals.scss';
 
 const cygre = local({
   src: [
     {
-      path: '../../../public/fonts/Cygre-Regular.ttf',
+      path: '../../../public/fonts2/Cygre-Medium.woff2',
       weight: '400',
       style: 'normal',
     },
