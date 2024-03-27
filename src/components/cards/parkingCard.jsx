@@ -25,9 +25,7 @@ const ParkingCard = ({ type, text }) => {
         {text}
       </div>
       <Image src={src} objectFit='cover' fill alt='Falsch-parker logo' />
-      <div className='hover:'>
-        <ShapeRoundButton className={'bg-[#0D0F11]'} />
-      </div>
+      <ShapeRoundButton className={'bg-[#0D0F11]'} />
     </div>
   );
 };

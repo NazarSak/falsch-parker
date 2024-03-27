@@ -27,7 +27,7 @@ const Header = ({ lang }) => {
               alt='Falsch-parker logo'
             />
           </div>
-          <div className='flex w-full items-center justify-center'>
+          <div className='flex w-full items-center justify-center max-[950px]:hidden'>
             <ul className='flex w-full max-w-[650px] justify-between'>
               {headerNavigation.map((item) => (
                 <li key={item.name}>
