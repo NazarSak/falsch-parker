@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import BusinessParking from '@/images/business-parking.png';
-import PrivateParking from '@/images/private-parking.png';
+import BusinessParking from '@/images/home-page/business-parking.png';
+import PrivateParking from '@/images/home-page/private-parking.png';
 
 const ParkingCard = ({ type, text }) => {
   let src = null;
@@ -19,8 +19,8 @@ const ParkingCard = ({ type, text }) => {
   }
 
   return (
-    <div className='w-[250px] relative h-[274px] flex justify-center items-center rounded-card overflow-hidden'>
-      <div className='absolute top-0 left-0 z-[1] text-white p-4 text-xl'>
+    <div className='relative flex h-[274px] w-[250px] items-center justify-center overflow-hidden rounded-card'>
+      <div className='absolute left-0 top-0 z-[1] p-4 text-xl text-white'>
         {text}
       </div>
       <Image src={src} objectFit='cover' fill alt='Falsch-parker logo' />

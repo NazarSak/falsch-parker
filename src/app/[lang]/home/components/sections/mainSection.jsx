@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
-import MainImage from '@/images/main-banner.png';
+import MainImage from '@/images/home-page/main-banner.png';
 import ParkingCard from '@/components/cards/parkingCard';
 import ParkingCardApp from '@/components/cards/parkingCardApp';
 import { Container } from '@/components/container/container';
 
-const MainSection = () => {
+export const MainSection = () => {
   return (
     <Container>
       <div className='flex'>
@@ -24,7 +24,7 @@ const MainSection = () => {
             text={
               <div className=''>
                 Wrong parkers on your{' '}
-                <span className='text-black bg-white rounded-md px-2 leading-10'>
+                <span className='rounded-md bg-light px-2 leading-10 text-black'>
                   business parking?
                 </span>
               </div>
@@ -35,7 +35,7 @@ const MainSection = () => {
             text={
               <div>
                 Wrong parkers on your{' '}
-                <span className='text-white bg-black rounded-md px-2 leading-10'>
+                <span className='rounded-md bg-black px-2 leading-10 text-white'>
                   private parking?
                 </span>
               </div>
@@ -44,7 +44,7 @@ const MainSection = () => {
 
           <ParkingCardApp
             text={
-              <div className='text-white text-3xl	'>
+              <div className='text-3xl text-white	'>
                 <span className='text-green'>Open app </span> to <br /> get all
                 features
               </div>
@@ -55,5 +55,3 @@ const MainSection = () => {
     </Container>
   );
 };
-
-export default MainSection;

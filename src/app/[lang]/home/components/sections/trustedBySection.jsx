@@ -1,6 +1,6 @@
 import React from 'react';
 import { SectionTitle } from '@/components/sectionTitle/sectionTitle';
-import { InfiniteCarousel } from '@/app/[lang]/home/components/infiniteCarousel';
+import { InfiniteCarousel } from '@/app/[lang]/home/components/components/infiniteCarousel';
 import { Container } from '@/components/container/container';
 
 export const TrustedBySection = () => {
