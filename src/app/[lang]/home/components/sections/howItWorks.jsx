@@ -24,22 +24,22 @@ export const HowItWorks = () => {
           />
         </div>
         <div className='flex h-[760px] w-1/2 items-center justify-center max-md:w-full'>
-          <div className='h-[240px] max-w-[530px]'>
+          <div className='max-w-[530px] px-5'>
             <div className='flex justify-between py-5 text-2xl'>
               <span className='text-dark'>
                 Take a picture of wrong parker.{' '}
               </span>
-              <span className='text-dark/50'>01</span>
+              <span className='ml-5 text-dark/50'>01</span>
             </div>
             <div className='flex items-center justify-between border-y-[1px] border-dark/10 py-5 text-2xl'>
               <span className='text-dark'>
                 Check that illegal parking situation is well documented.
               </span>
-              <span className='text-dark/50'>02</span>
+              <span className='ml-5 text-dark/50'>02</span>
             </div>
-            <div className='flex justify-between py-5 text-2xl'>
-              <span className=' text-dark'>Confirm the location.</span>
-              <span className='text-dark/50'>03</span>
+            <div className='flex  justify-between py-5 text-2xl'>
+              <span className='text-dark'>Confirm the location.</span>
+              <span className='ml-5 text-dark/50'>03</span>
             </div>
           </div>
         </div>
