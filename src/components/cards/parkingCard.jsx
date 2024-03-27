@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import BusinessParking from '@/images/home-page/business-parking.png';
 import PrivateParking from '@/images/home-page/private-parking.png';
+import { ShapeRoundButton } from '@/components/buttons/shapeRoundButton';
 
 const ParkingCard = ({ type, text }) => {
   let src = null;
@@ -19,11 +20,14 @@ const ParkingCard = ({ type, text }) => {
   }
 
   return (
-    <div className='relative flex h-[274px] w-[250px] items-center justify-center overflow-hidden rounded-card'>
+    <div className='relative flex h-[274px] w-[250px] items-center justify-center overflow-hidden rounded-bl-card rounded-tl-card rounded-tr-card'>
       <div className='absolute left-0 top-0 z-[1] p-4 text-xl text-white'>
         {text}
       </div>
       <Image src={src} objectFit='cover' fill alt='Falsch-parker logo' />
+      <div className='hover:'>
+        <ShapeRoundButton className={'bg-[#0D0F11]'} />
+      </div>
     </div>
   );
 };

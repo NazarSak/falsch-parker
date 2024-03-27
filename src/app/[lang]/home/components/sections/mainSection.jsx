@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import MainImage from '@/images/home-page/main-banner.png';
 import ParkingCard from '@/components/cards/parkingCard';
-import ParkingCardApp from '@/components/cards/parkingCardApp';
+import { ParkingCardApp } from '@/components/cards/parkingCardApp';
 import { Container } from '@/components/container/container';
 
 export const MainSection = () => {

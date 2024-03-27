@@ -43,12 +43,6 @@ export const ProductCard = ({ title, subtitle, type, className }) => {
           {subtitle}
         </div>
 
-        {/*<div className='absolute bottom-[-10px] right-[-10px]'>*/}
-        {/*  <button className={cl(style.test, `${className}`)}>*/}
-        {/*    <ArrowDown className='text-light transition duration-500 ease-in-out group-hover:scale-125' />*/}
-        {/*  </button>*/}
-        {/*</div>*/}
-
         <ShapeRoundButton className={className} />
       </div>
     </div>

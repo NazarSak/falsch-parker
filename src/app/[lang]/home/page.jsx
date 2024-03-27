@@ -3,6 +3,7 @@ import { TrustedBySection } from '@/app/[lang]/home/components/sections/trustedB
 import { MainSection } from '@/app/[lang]/home/components/sections/mainSection';
 import { OurProductsSection } from '@/app/[lang]/home/components/sections/ourProductsSection';
 import { ParkingTicketSection } from '@/app/[lang]/home/components/sections/parkingTicketSection';
+import { HowItWorks } from '@/app/[lang]/home/components/sections/howItWorks';
 
 const Page = () => {
   return (
@@ -11,6 +12,7 @@ const Page = () => {
       <TrustedBySection />
       <OurProductsSection />
       <ParkingTicketSection />
+      <HowItWorks />
     </section>
   );
 };

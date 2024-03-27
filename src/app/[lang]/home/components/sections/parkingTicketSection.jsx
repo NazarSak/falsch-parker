@@ -49,7 +49,7 @@ export const ParkingTicketSection = () => {
           </div>
         </div>
 
-        <div className='relative mt-[170px] h-[700px] w-full overflow-hidden  rounded-bl-card rounded-tl-card rounded-tr-card'>
+        <div className='relative mt-[170px] h-[700px] w-full overflow-hidden rounded-bl-card  rounded-tl-card rounded-tr-card max-md:h-[580px]'>
           <div className='absolute left-0 z-[1] p-16'>
             <div className='mb-16 w-2/3 text-7xl leading-[1.2] text-red-600 max-md:w-full max-sm:text-3xl'>
               <span className='text-white'>Need to fine wrong parker?</span>
