@@ -7,7 +7,9 @@ export const OurProductsSection = React.forwardRef((props, ref) => {
   return (
     <Container>
       <div ref={ref} />
-      <SectionTitle title='Our products' />
+      <div className='pb-9'>
+        <SectionTitle title='Our products' />
+      </div>
       <div className='flex w-full gap-3'>
         <ProductCard
           type='fuelFraud'

@@ -7,7 +7,9 @@ export const TrustedBySection = () => {
   return (
     <div className='my-[150px]'>
       <Container>
-        <SectionTitle title='Trusted by' />
+        <div className='py-5'>
+          <SectionTitle title='Trusted by' />
+        </div>
       </Container>
       <InfiniteCarousel />
     </div>

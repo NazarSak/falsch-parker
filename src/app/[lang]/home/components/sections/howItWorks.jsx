@@ -9,10 +9,9 @@ import { ShapeRoundButton } from '@/components/buttons/shapeRoundButton';
 export const HowItWorks = () => {
   return (
     <Container>
-      <h1 className='m-0 p-0 text-8xl text-dark'>
+      <h1 className='mb-[80px] mt-[170px] p-0 text-8xl text-dark'>
         See how <br /> it works.
       </h1>
-
       <div className='relative mb-10 mt-5 flex h-[760px] rounded-card bg-white max-md:flex-col'>
         <div className='relative h-full w-1/2 max-md:w-full max-md:pl-0'>
           <Image
