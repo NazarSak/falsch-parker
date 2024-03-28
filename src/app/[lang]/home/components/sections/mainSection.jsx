@@ -1,19 +1,21 @@
 import React from 'react';
 import Image from 'next/image';
-import MainImage from '@/images/home-page/main-banner.png';
 import ParkingCard from '@/components/cards/parkingCard';
 import { ParkingCardApp } from '@/components/cards/parkingCardApp';
 import { Container } from '@/components/container/container';
+import { MainOpenAppShape } from '@/app/[lang]/home/components/sections/components/mainOpenAppShape';
+import MainBanner from '@/images/home-page/main-banner.png';
 
-export const MainSection = () => {
+export const MainSection = ({ scrollTo }) => {
   return (
     <Container>
-      <div className='flex'>
-        <div className='w-full'>
+      <div className='flex gap-5'>
+        <div className='relative w-full bg-light'>
+          <MainOpenAppShape scrollTo={scrollTo} />
           <Image
-            src={MainImage}
-            width='100%'
-            height='100%'
+            src={MainBanner}
+            objectFit='cover'
+            fill
             alt='Falsch-parker logo'
             className='rounded-card'
           />

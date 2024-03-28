@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { v4 as uuidv4 } from 'uuid';
 
 import Image1 from '@/images/home-page/carousel/img_1.png';
 import Image2 from '@/images/home-page/carousel/img_2.png';
@@ -71,14 +72,26 @@ export const InfiniteCarousel = () => {
       <div className='inline-flex w-full flex-nowrap'>
         <ul className='flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-1'>
           {items.map((_, index) => (
-            <CarouselItem type={index} />
+            <CarouselItem key={uuidv4()} type={index} />
+          ))}
+          {items.map((_, index) => (
+            <CarouselItem key={uuidv4()} type={index} />
+          ))}
+          {items.map((_, index) => (
+            <CarouselItem key={uuidv4()} type={index} />
           ))}
         </ul>
         <ul
           className='flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-1'
           aria-hidden='true'>
           {items.map((_, index) => (
-            <CarouselItem type={index} />
+            <CarouselItem key={uuidv4()} type={index} />
+          ))}
+          {items.map((_, index) => (
+            <CarouselItem key={uuidv4()} type={index} />
+          ))}
+          {items.map((_, index) => (
+            <CarouselItem key={uuidv4()} type={index} />
           ))}
         </ul>
       </div>

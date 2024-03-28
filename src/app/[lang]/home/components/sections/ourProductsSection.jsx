@@ -3,9 +3,10 @@ import { Container } from '@/components/container/container';
 import { SectionTitle } from '@/components/sectionTitle/sectionTitle';
 import { ProductCard } from '@/components/cards/productCard';
 
-export const OurProductsSection = () => {
+export const OurProductsSection = React.forwardRef((props, ref) => {
   return (
     <Container>
+      <div ref={ref} />
       <SectionTitle title='Our products' />
       <div className='flex w-full gap-3'>
         <ProductCard
@@ -29,4 +30,4 @@ export const OurProductsSection = () => {
       </div>
     </Container>
   );
-};
+});
