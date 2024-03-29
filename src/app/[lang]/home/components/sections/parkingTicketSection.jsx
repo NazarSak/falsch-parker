@@ -1,16 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
 import { Container } from '@/components/container/container';
-import EyeIcon from '@/images/home-page/parkingTicketIcon/eye.svg';
-import FormIcon from '@/images/home-page/parkingTicketIcon/form.svg';
-import MarkIcon from '@/images/home-page/parkingTicketIcon/mark.svg';
-import PhotoIcon from '@/images/home-page/parkingTicketIcon/photo.svg';
+import EyeIcon from '@/images/home-page/icons/eye.svg';
+import FormIcon from '@/images/home-page/icons/form.svg';
+import MarkIcon from '@/images/home-page/icons/mark.svg';
+import PhotoIcon from '@/images/home-page/icons/photo.svg';
 import NoParking from '@/images/home-page/no-parking.png';
 import { OpenAppButton } from '@/components/buttons/openAppButton';
-import { ShapeRoundButton } from '@/components/buttons/shapeRoundButton';
-import { DivideBanner } from '@/components/separateBanner/divideBanner';
+import { DivideBanner } from '@/components/divideBanner/divideBanner';
+import { ArrowDownShapeButton } from '@/components/buttons/shapeButtons/arrowDownShapeButton';
 
 export const ParkingTicketSection = () => {
+  const goToApp = () => {};
+
   return (
     <Container>
       <div className='mt-[170px]'>
@@ -37,7 +39,7 @@ export const ParkingTicketSection = () => {
           objectPosition='right'
           alt='No Parking'
         />
-        <ShapeRoundButton className='bg-[#0D0F11]' />
+        <ArrowDownShapeButton className='bg-[#0D0F11]' onClick={goToApp} />
       </div>
     </Container>
   );

@@ -1,4 +1,4 @@
-.shapeRoundButton {
+.ArrowButtonGroupShapeButton {
   @apply h-[48px] w-[48px] rounded-full border-[10px] border-light box-content flex items-center justify-center;
   @apply relative after:absolute after:bottom-0 after:right-[58px] after:h-[64px] after:w-[64px] after:bg-transparent after:content-[""] after:rounded-br-[32px] after:shadow-[5px_40px_0_5px_#F5F7F9];
   @apply relative before:absolute before:bottom-[58px] before:right-0 before:h-[64px] before:w-[64px] before:bg-transparent before:content-[""] before:rounded-br-[32px] before:shadow-[40px_5px_0_5px_#F5F7F9];

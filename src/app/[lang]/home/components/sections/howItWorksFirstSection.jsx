@@ -1,12 +1,19 @@
 import React from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { Container } from '@/components/container/container';
 import { OpenAppButton } from '@/components/buttons/openAppButton';
 import MobileParkingCar from '@/images/home-page/mobil-parking-car.png';
 import Claim from '@/images/home-page/claim.png';
-import { ShapeRoundButton } from '@/components/buttons/shapeRoundButton';
+import { ArrowRightShapeButton } from '@/components/buttons/shapeButtons/arrowRightShapeButton';
 
-export const HowItWorks = () => {
+export const HowItWorksFirstSection = () => {
+  const router = useRouter();
+
+  const goToParkingTicket = () => {
+    router.push('/parking-ticket');
+  };
+
   return (
     <Container>
       <h1 className='mb-[80px] mt-[170px] p-0 text-8xl text-dark'>
@@ -42,7 +49,11 @@ export const HowItWorks = () => {
             </div>
           </div>
         </div>
-        <ShapeRoundButton className={'bg-[white]'} />
+        <ArrowRightShapeButton
+          className={'bg-[white]'}
+          isLightTheme
+          onClick={goToParkingTicket}
+        />
       </div>
 
       <div className='relative h-[700px] w-full overflow-hidden rounded-card max-md:h-[580px]'>

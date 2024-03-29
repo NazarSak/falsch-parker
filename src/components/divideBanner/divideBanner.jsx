@@ -37,7 +37,8 @@ export const DivideBanner = ({
                   <Image
                     key={uuidv4()}
                     src={src}
-                    className={`z-[${-index}] ml-[-20px] h-[60px] w-[60px] max-md:ml-[-10px] max-md:h-[30px] max-md:w-[30px]`}
+                    className={`ml-[-20px] h-[60px] w-[60px] max-md:ml-[-10px] max-md:h-[30px] max-md:w-[30px]`}
+                    style={{ zIndex: -index }}
                     alt='FormIcon'
                   />
                 );

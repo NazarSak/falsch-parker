@@ -1,12 +1,28 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
-import ParkingCard from '@/components/cards/parkingCard';
+import { ParkingCard } from '@/components/cards/parkingCard';
 import { ParkingCardApp } from '@/components/cards/parkingCardApp';
 import { Container } from '@/components/container/container';
 import { MainOpenAppShape } from '@/app/[lang]/home/components/sections/components/mainOpenAppShape';
 import MainBanner from '@/images/home-page/main-banner.png';
+import { useRouter } from 'next/navigation';
 
 export const MainSection = ({ scrollTo }) => {
+  const router = useRouter();
+  const gotToBusinessParking = () => {
+    router.push('/app');
+  };
+
+  const gotToPrivateParking = () => {
+    router.push('/app');
+  };
+
+  const gotToApp = () => {
+    router.push('/app');
+  };
+
   return (
     <Container>
       <div className='flex gap-5'>
@@ -23,6 +39,7 @@ export const MainSection = ({ scrollTo }) => {
         <div className='flex flex-col gap-5'>
           <ParkingCard
             type='businessParking'
+            onClick={gotToBusinessParking}
             text={
               <div className=''>
                 Wrong parkers on your{' '}
@@ -34,6 +51,7 @@ export const MainSection = ({ scrollTo }) => {
           />
           <ParkingCard
             type='privateParking'
+            onClick={gotToPrivateParking}
             text={
               <div>
                 Wrong parkers on your{' '}
@@ -45,6 +63,7 @@ export const MainSection = ({ scrollTo }) => {
           />
 
           <ParkingCardApp
+            onClick={gotToApp}
             text={
               <div className='text-3xl text-white	'>
                 <span className='text-green'>Open app </span> to <br /> get all

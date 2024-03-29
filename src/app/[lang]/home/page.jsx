@@ -4,7 +4,8 @@ import { TrustedBySection } from '@/app/[lang]/home/components/sections/trustedB
 import { MainSection } from '@/app/[lang]/home/components/sections/mainSection';
 import { OurProductsSection } from '@/app/[lang]/home/components/sections/ourProductsSection';
 import { ParkingTicketSection } from '@/app/[lang]/home/components/sections/parkingTicketSection';
-import { HowItWorks } from '@/app/[lang]/home/components/sections/howItWorks';
+import { HowItWorksFirstSection } from '@/app/[lang]/home/components/sections/howItWorksFirstSection';
+import { TowingSection } from '@/app/[lang]/home/components/sections/towingSection';
 
 const Page = () => {
   const ourProductsSectionRef = useRef(null);
@@ -22,7 +23,8 @@ const Page = () => {
       <TrustedBySection />
       <OurProductsSection ref={ourProductsSectionRef} />
       <ParkingTicketSection />
-      <HowItWorks />
+      <HowItWorksFirstSection />
+      <TowingSection />
     </section>
   );
 };

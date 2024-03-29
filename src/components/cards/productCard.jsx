@@ -5,7 +5,7 @@ import Image from 'next/image';
 import FuelFraud from '@/images/home-page/product/fuel-fraud..png';
 import ParkingFines from '@/images/home-page/product/parking-fines.png';
 import RequestTruck from '@/images/home-page/product/request-truck.png';
-import { ShapeRoundButton } from '@/components/buttons/shapeRoundButton';
+import { ArrowDownGroupShapeButton } from '@/components/buttons/shapeButtons/arrowDownGroupShapeButton';
 
 export const ProductCard = ({ title, subtitle, type, className }) => {
   let src = null;
@@ -43,7 +43,7 @@ export const ProductCard = ({ title, subtitle, type, className }) => {
           {subtitle}
         </div>
 
-        <ShapeRoundButton className={className} />
+        <ArrowDownGroupShapeButton className={className} />
       </div>
     </div>
   );

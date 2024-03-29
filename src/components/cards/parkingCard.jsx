@@ -2,9 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import BusinessParking from '@/images/home-page/business-parking.png';
 import PrivateParking from '@/images/home-page/private-parking.png';
-import { ShapeRoundButton } from '@/components/buttons/shapeRoundButton';
+import { ArrowRightShapeButton } from '@/components/buttons/shapeButtons/arrowRightShapeButton';
 
-const ParkingCard = ({ type, text }) => {
+export const ParkingCard = ({ type, text, onClick }) => {
   let src = null;
   let alt = '';
 
@@ -25,9 +25,7 @@ const ParkingCard = ({ type, text }) => {
         {text}
       </div>
       <Image src={src} objectFit='cover' fill alt='Falsch-parker logo' />
-      <ShapeRoundButton className={'bg-[#0D0F11]'} />
+      <ArrowRightShapeButton className={'bg-[#0D0F11]'} onClick={onClick} />
     </div>
   );
 };
-
-export default ParkingCard;
