@@ -7,6 +7,7 @@ import { ParkingTicketSection } from '@/app/[lang]/home/components/sections/park
 import { HowItWorksFirstSection } from '@/app/[lang]/home/components/sections/howItWorksFirstSection';
 import { TowingSection } from '@/app/[lang]/home/components/sections/towingSection';
 import { FuelFraud } from '@/app/[lang]/home/components/sections/fuelFraud';
+import { TestimonialsSection } from '@/app/[lang]/home/components/sections/testimonialsSection';
 
 const Page = () => {
   const ourProductsSectionRef = useRef(null);
@@ -27,6 +28,7 @@ const Page = () => {
       <HowItWorksFirstSection />
       <TowingSection />
       <FuelFraud />
+      <TestimonialsSection />
     </section>
   );
 };
