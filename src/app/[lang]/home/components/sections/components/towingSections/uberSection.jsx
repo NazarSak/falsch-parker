@@ -23,19 +23,17 @@ export const UberSection = () => {
             </div>
             <Image
               src={UberTowing1}
-              objectFit='cover'
               fill
-              objectPosition='bottom'
               alt='No Parking'
+              className='object-cover object-bottom'
             />
           </div>
         ) : (
           <div className='relative h-full w-full bg-dark'>
             <Image
               src={UberTowing2}
-              objectFit='cover'
               fill
-              objectPosition='bottom'
+              className='object-cover object-bottom'
               alt='No Parking'
             />
             <div className='absolute right-0 z-[1] flex h-full flex-col justify-center text-2xl text-white max-md:w-full md:w-1/2'>

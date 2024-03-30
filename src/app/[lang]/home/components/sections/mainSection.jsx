@@ -30,10 +30,9 @@ export const MainSection = ({ scrollTo }) => {
           <MainOpenAppShape scrollTo={scrollTo} />
           <Image
             src={MainBanner}
-            objectFit='cover'
             fill
             alt='Falsch-parker logo'
-            className='rounded-card'
+            className='rounded-card object-cover'
           />
         </div>
         <div className='flex flex-col gap-5'>

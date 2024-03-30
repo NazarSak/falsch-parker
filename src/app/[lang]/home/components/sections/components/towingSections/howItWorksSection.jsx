@@ -10,14 +10,13 @@ export const HowItWorksSection = () => {
       <h1 className='mb-[80px] mt-[170px] p-0 text-8xl text-dark'>
         See how <br /> it works.
       </h1>
-      <div className='relative mb-10 mt-5 flex h-[760px] rounded-card bg-white max-md:flex-col'>
+      <div className='relative mb-10 mt-5 flex h-[760px] rounded-card bg-black bg-white max-md:flex-col'>
         <div className='relative h-full w-1/2 max-md:w-full max-md:pl-0'>
           <Image
             src={MobileParkingCar}
-            objectFit='contain'
             fill
             alt='No Parking'
-            className='ml-[16%] mt-[10%] max-md:ml-[10%] max-md:mt-[5%]'
+            className='ml-[16%] mt-[10%] object-contain max-md:ml-[10%] max-md:mt-[5%]'
           />
         </div>
         <div className='flex h-[760px] w-1/2 items-center justify-center max-md:w-full'>

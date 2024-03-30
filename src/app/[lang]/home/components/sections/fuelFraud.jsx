@@ -4,6 +4,7 @@ import { DivideBanner } from '@/components/divideBanner/divideBanner';
 import RefillIcon from '@/images/home-page/icons/refill.svg';
 import CoinIcon from '@/images/home-page/icons/coin.svg';
 import LikeIcon from '@/images/home-page/icons/like.svg';
+import { TheProblem } from '@/app/[lang]/home/components/sections/components/fuelFroundSections/theProblem';
 
 export const FuelFraud = () => {
   return (
@@ -16,6 +17,7 @@ export const FuelFraud = () => {
           images={[RefillIcon, CoinIcon, LikeIcon]}
         />
       </div>
+      <TheProblem />
     </Container>
   );
 };

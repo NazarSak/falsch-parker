@@ -13,7 +13,12 @@ export const TrackTowingSection = () => {
           </span>
           <span className='text-dark/50'>with live GPS</span>
         </div>
-        <Image src={MobileAppMap} objectFit='cover' fill alt='No Parking' />
+        <Image
+          src={MobileAppMap}
+          fill
+          alt='No Parking'
+          className='object-cover'
+        />
         <ArrowRightShapeButton className='bg-[#858585]' onClick={() => {}} />
       </div>
 

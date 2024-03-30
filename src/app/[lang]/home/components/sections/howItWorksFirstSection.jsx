@@ -23,10 +23,9 @@ export const HowItWorksFirstSection = () => {
         <div className='relative h-full w-1/2 max-md:w-full max-md:pl-0'>
           <Image
             src={MobileParkingCar}
-            objectFit='contain'
             fill
             alt='No Parking'
-            className='ml-[16%] mt-[10%] max-md:ml-[10%] max-md:mt-[5%]'
+            className='ml-[16%] mt-[10%] object-contain max-md:ml-[10%] max-md:mt-[5%]'
           />
         </div>
         <div className='flex h-[760px] w-1/2 items-center justify-center max-md:w-full'>
@@ -73,9 +72,8 @@ export const HowItWorksFirstSection = () => {
         </div>
         <Image
           src={Claim}
-          objectFit='cover'
           fill
-          objectPosition='middle'
+          className='object-cover object-center'
           alt='No Parking'
         />
       </div>

@@ -34,10 +34,9 @@ export const ParkingTicketSection = () => {
         </div>
         <Image
           src={NoParking}
-          objectFit='cover'
           fill
-          objectPosition='right'
           alt='No Parking'
+          className='object-cover object-right'
         />
         <ArrowDownShapeButton className='bg-[#0D0F11]' onClick={goToApp} />
       </div>

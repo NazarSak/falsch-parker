@@ -24,7 +24,7 @@ export const ParkingCard = ({ type, text, onClick }) => {
       <div className='absolute left-0 top-0 z-[1] p-4 text-xl text-white'>
         {text}
       </div>
-      <Image src={src} objectFit='cover' fill alt='Falsch-parker logo' />
+      <Image src={src} fill alt='Falsch-parker logo' className='object-cover' />
       <ArrowRightShapeButton className={'bg-[#0D0F11]'} onClick={onClick} />
     </div>
   );

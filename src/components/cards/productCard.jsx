@@ -33,8 +33,7 @@ export const ProductCard = ({ title, subtitle, type, className }) => {
         <div className='relative h-[680px] w-[440px] '>
           <Image
             src={src}
-            objectFit='cover'
-            className='duration-500 ease-in-out group-hover:scale-105'
+            className='object-cover duration-500 ease-in-out group-hover:scale-105'
             fill
             alt={alt}
           />
