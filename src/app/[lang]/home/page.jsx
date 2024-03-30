@@ -19,7 +19,7 @@ const Page = () => {
   };
 
   return (
-    <section className='main mt-20'>
+    <section>
       <MainSection scrollTo={scrollToOurProductsSection} />
       <TrustedBySection />
       <OurProductsSection ref={ourProductsSectionRef} />
