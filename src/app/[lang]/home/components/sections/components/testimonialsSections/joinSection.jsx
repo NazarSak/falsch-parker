@@ -4,7 +4,7 @@ import { ContactUs } from '@/components/buttons/contactUs';
 
 export const JoinSection = () => {
   return (
-    <div className='mb-20 flex h-[1100px] w-full flex-col items-center'>
+    <div className='flex h-[1100px] w-full flex-col items-center'>
       <div className='max-md:-[580px] flex w-full flex-col justify-between rounded-card bg-green p-20 text-white max-sm:p-6 md:h-[760px]'>
         <div className='flex w-full max-md:flex-col'>
           <div className='flex justify-between max-md:w-full  md:w-1/2'>

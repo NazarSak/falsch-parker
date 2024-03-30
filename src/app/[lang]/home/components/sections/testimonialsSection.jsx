@@ -7,11 +7,15 @@ import { JoinSection } from '@/app/[lang]/home/components/sections/components/te
 export const TestimonialsSection = () => {
   return (
     <Container>
-      <div className='mb-9 mt-[170px]'>
-        <SectionTitle title='Testimonials' />
+      <div className='my-[170px]'>
+        <div className='mb-9'>
+          <SectionTitle title='Testimonials' />
+        </div>
+        <WhatClientsSay />
       </div>
-      {/*<WhatClientsSay />*/}
-      <JoinSection />
+      <div className='mb-20'>
+        <JoinSection />
+      </div>
     </Container>
   );
 };
