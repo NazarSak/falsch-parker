@@ -4,7 +4,7 @@ import RefillImage from '@/images/home-page/refill.png';
 import { CrossShapeButton } from '@/components/buttons/shapeButtons/crossShapeButton';
 import { ArrowLeftShapeButton } from '@/components/buttons/shapeButtons/arrowLeftShapeButton';
 
-export const TheProblem = () => {
+export const TheProblemSection = () => {
   const [isTwoScreen, setIsTwoScree] = useState(false);
   return (
     <div className='relative h-[700px] w-full overflow-hidden rounded-bl-card rounded-tl-card rounded-tr-card bg-black'>
