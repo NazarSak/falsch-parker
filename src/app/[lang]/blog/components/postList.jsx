@@ -1,14 +1,19 @@
 import React from 'react';
 import { Post } from '.';
 
-const PostList = () => {
+const PostList = ({ posts }) => {
   return (
     <div className='mt-10 grid grid-cols-2 gap-5'>
-      {Array(6)
-        .fill(0)
-        .map((_) => (
-          <Post />
-        ))}
+      {posts.map((post) => (
+        <Post
+          key={post.id}
+          imageSrc={post.imageUrl}
+          tag={post.tag}
+          time={post.time}
+          title={post.title}
+          description={post.description}
+        />
+      ))}
     </div>
   );
 };

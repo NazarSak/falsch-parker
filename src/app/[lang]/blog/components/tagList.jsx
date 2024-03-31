@@ -1,12 +1,23 @@
 import React from 'react';
-import { tags } from '@/app/[lang]/blog/tags';
 import { Chip } from '@/app/[lang]/blog/components/chip';
+import { buildBlogPagingHref } from '@/utils/utils';
 
-const TagList = () => {
+const TagList = ({ tags, activeTag }) => {
   return (
     <div className='flex gap-2'>
+      <Chip
+        key='all'
+        text='All'
+        active={!activeTag}
+        href={buildBlogPagingHref(1)}
+      />
       {tags.map((tag) => (
-        <Chip text={tag} active={tag === 'All'} />
+        <Chip
+          key={tag}
+          text={tag}
+          active={tag === activeTag}
+          href={buildBlogPagingHref(1, tag)}
+        />
       ))}
     </div>
   );

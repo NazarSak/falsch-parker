@@ -23,11 +23,11 @@ export const HowItWorksSection = () => {
             <div className='pb-9 text-7xl'>
               Reduce <br /> fuel theft.
             </div>
-            <siv className='text-xl'>
+            <div className='text-xl'>
               To ensure legal certainty, take a clear photo of the illegally
               parked vehicle with its license plate visible. Remember, a court
               prohibition notice is required for compensation claims.
-            </siv>
+            </div>
           </div>
         </div>
       </div>

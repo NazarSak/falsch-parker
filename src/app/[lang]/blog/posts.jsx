@@ -1,11 +1,11 @@
 import React from 'react';
 import { PostList, TagList } from './components';
 
-const Posts = ({}) => {
+const Posts = ({ activeTag, posts, tags }) => {
   return (
     <section>
-      <TagList />
-      <PostList />
+      <TagList tags={tags} activeTag={activeTag} />
+      <PostList posts={posts} />
     </section>
   );
 };
