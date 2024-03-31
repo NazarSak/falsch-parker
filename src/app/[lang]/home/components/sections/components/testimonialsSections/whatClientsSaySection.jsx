@@ -48,7 +48,7 @@ export const CustomerReview = ({
   );
 };
 
-export const WhatClientsSay = () => {
+export const WhatClientsSaySection = () => {
   return (
     <div className='flex w-full rounded-card bg-white p-20'>
       <div className='w-1/3'>
