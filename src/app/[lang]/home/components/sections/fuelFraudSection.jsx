@@ -8,7 +8,7 @@ import { TheProblemSection } from '@/app/[lang]/home/components/sections/compone
 import { HowItWorksSection } from '@/app/[lang]/home/components/sections/components/fuelFroundSections/howItWorksSection';
 import { SaveSection } from '@/app/[lang]/home/components/sections/components/fuelFroundSections/saveSection';
 
-export const FuelFraud = () => {
+export const FuelFraudSection = () => {
   return (
     <Container>
       <div className='my-[170px]'>

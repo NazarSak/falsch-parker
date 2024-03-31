@@ -6,8 +6,10 @@ import { OurProductsSection } from '@/app/[lang]/home/components/sections/ourPro
 import { ParkingTicketSection } from '@/app/[lang]/home/components/sections/parkingTicketSection';
 import { HowItWorksFirstSection } from '@/app/[lang]/home/components/sections/howItWorksFirstSection';
 import { TowingSection } from '@/app/[lang]/home/components/sections/towingSection';
-import { FuelFraud } from '@/app/[lang]/home/components/sections/fuelFraud';
+import { FuelFraudSection } from '@/app/[lang]/home/components/sections/fuelFraudSection';
 import { TestimonialsSection } from '@/app/[lang]/home/components/sections/testimonialsSection';
+import { OtherFeaturesSection } from '@/app/[lang]/home/components/sections/otherFeaturesSection';
+import { FaqSection } from '@/app/[lang]/home/components/sections/faqSection';
 
 const Page = () => {
   const ourProductsSectionRef = useRef(null);
@@ -27,7 +29,9 @@ const Page = () => {
       <ParkingTicketSection />
       <HowItWorksFirstSection />
       <TowingSection />
-      <FuelFraud />
+      <FuelFraudSection />
+      <OtherFeaturesSection />
+      <FaqSection />
       <TestimonialsSection />
     </section>
   );
