@@ -1,30 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Getting Started
 
-## Getting Started
+
+## Falsch Parker
 
 First, install dependencies:
 ```bash
 yarn 
 ```
 
-First, run the development server:
+Create `.env.local` and copy there the content from `.env.local.example` with values replaced by real ones.
 
+Then just run the project:
 ```bash
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 with your browser to see Falsch Parker web application.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Sanity Studio
 
-## Deploy on Vercel
+### Local development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We can easily work with Sanity Studio locally.
+To do this just go to `/sanity` folder and install dependencies:
+```bash
+yarn
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Then create `.env.local` and copy there the content from `.env.local.example` with values replaced by real ones.
+To start Sanity Studio locally run:
+```bash
+yarn dev
+```
+
+Open http://localhost:3333 with your browser to see Sanity Studio.
+
+### Deploy
+
+To have access to Studio from anywhere we should deploy it.
+Go to `/sanity` folder and just run:
+```bash
+yarn deploy
+```
+
+Now you can open https://falschparker.sanity.studio and work with the content from there.
