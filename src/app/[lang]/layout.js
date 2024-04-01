@@ -33,7 +33,7 @@ const RootLayout = ({ children, params: { lang } }) => {
     <html lang={lang}>
       <body className={cygre.className}>
         <Header lang={lang} />
-        <main className='mt-20'>{children}</main>
+        <main className='mt-[75px]'>{children}</main>
         <Footer />
       </body>
     </html>
