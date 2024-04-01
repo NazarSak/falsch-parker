@@ -2,7 +2,7 @@ const buildGetPostsQuery = (tag = '', offset = 0, limit = 6) => {
   const tagFilter = tag ? ` && tag == "${tag}"` : '';
   const limitFilter = `[${offset}...${offset + limit}]`;
   return `{
-    "items": *[_type == "post"${tagFilter}]{_id, tag, title, description, cover, time}${limitFilter},
+    "items": *[_type == "post"${tagFilter}]{_id, tag, title, description, cover, time, _createdAt}${limitFilter} | order(_createdAt desc),
     "total": count(*[_type == "post"${tagFilter}])
     }`;
 };

@@ -31,3 +31,5 @@ const BlogPage = async ({ searchParams }) => {
 };
 
 export default BlogPage;
+
+export const dynamic = 'force-dynamic';
