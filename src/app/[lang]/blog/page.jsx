@@ -32,4 +32,8 @@ const BlogPage = async ({ searchParams }) => {
 
 export default BlogPage;
 
-export const dynamic = 'force-dynamic';
+// returns page per each request without caching
+// export const dynamic = 'force-dynamic';
+
+// revalidates whole route in N seconds
+export const revalidate = 30;
