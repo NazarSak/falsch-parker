@@ -32,8 +32,7 @@ export const MobileMenu = ({ isOpen, onClose, lang }) => {
         visibility: isOpen ? 'visible' : 'hidden',
         top: isOpen ? '90%' : '0',
         transition: 'all 0.4s ease-in-out',
-      }}
-      onClick={onClose}>
+      }}>
       <div
         className='flex w-full max-w-md flex-col items-center gap-2 rounded-lg bg-[#F5F7F9] p-4'
         style={{
@@ -47,8 +46,9 @@ export const MobileMenu = ({ isOpen, onClose, lang }) => {
             <li key={item.name} className='flex flex-col gap-2'>
               <Link
                 href={`/${lang}${item.href}`}
+                onClick={onClose}
                 className={cl(
-                  ' p-0 text-base font-light text-[#0D0F11] duration-200 hover:text-[#28282880]',
+                  ' p-0 text-base font-light text-[#0D0F11] duration-200 hover:text-[#28282880] w-fit',
                   pathname === `/${lang}${item.href}`
                     ? 'drop-shadow-[0_0.5px_0_#000]'
                     : ''
